@@ -1,0 +1,126 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    border: solid black;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    border: solid red;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+hero {
+    display: grid;
+    grid-template-rows: 8vh 16vh;
+    border: solid gray;
+    padding: 0;
+}
+
+#top-hero,
+#bottom-hero, 
+#searchbar,
+#notification-bar,
+#greeting,
+#navbar {
+    display: flex;
+    flex-direction: row;
+    border: solid purple;
+}
+
+#top-hero,
+#bottom-hero {
+    justify-content: space-between;
+    border: solid lime;
+}
+
+#container {
+    border: solid pink;
+    display: flex;
+    /* grid-template-columns: 3fr 1fr; */
+    gap: 15px;
+    margin: 0 15px;
+    height: 76vh;
+}
+
+#card-container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-auto-rows: 1fr;
+    border: solid blue;
+    gap: 15px;
+    height: 60vh;
+}
+
+.card-section {
+    border: solid maroon;
+    height: 18vh;
+    padding: 0;
+}
+
+.action-btns {
+    display: flex;
+    justify-content: flex-end;
+    border: solid pink;
+    padding: 0;
+}
+
+.card-section p {
+    border: solid green;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid orange;
+    gap: 30px;
+}
+
+#announcements {
+    border: solid teal;
+}
+
+#announcement-container {
+    border: solid green;
+}
+
+.announcement-card {
+    border: solid gray;
+}
+
+#trending {
+    border: solid blue;
+}
+
+#trending-container {
+    border: solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.trending-card {
+    display: flex;
+    flex-direction: row;
+    border: solid pink;
+}
+
+.trending-info {
+    display: flex;
+    flex-direction: column;
+    border: solid teal;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 20px;
+    border: solid gray;
+    margin: 0;
+}
+
+h4 {
+    border: solid blue;
+}
