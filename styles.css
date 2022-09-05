@@ -8,6 +8,7 @@
     --white-color: white;
     --blue-color: rgb(40, 159, 228);
     --gray-color: rgb(237, 241, 243);
+    --darker-gray-color: rgb(184, 188, 190); 
     --gold-color: rgb(255, 208, 0);
     --skyblue-color: rgb(205, 224, 235);
     --darkgray-color: gray;
@@ -35,6 +36,7 @@ sidebar {
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
+    border: solid black;
 }
 
 sidebar heading {
@@ -100,13 +102,11 @@ hero {
 #navbar {
     display: flex;
     flex-direction: row;
-    border: solid purple;
 }
 
 #top-hero,
 #bottom-hero {
     justify-content: space-between;
-    border: solid lime;
 }
 
 #top-hero {
@@ -116,10 +116,25 @@ hero {
 }
 
 #searchbar {
-    display: grid;
-    grid-template-columns: 1fr 10fr;
+    display: flex;
+    align-items: center;
     margin-left: 2vw;
     font-size: 12px;
+    gap: 15px;
+}
+
+#search {
+    border-radius: 50px;
+    height: 5vh;
+    width: 40vw;
+}
+
+#searchbar img{
+    height: 25px;
+}
+
+.bell img {
+    height: 20px;
 }
 
 .logo {
@@ -129,6 +144,9 @@ hero {
 .small-logo {
     height: 40px;
     width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gold-logo {
@@ -149,10 +167,13 @@ hero {
 
 #notification-bar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-right: 2vw;
     font-size: 12px;
+    height: 5vh;
+    border: solid purple;
+    gap: 35px;
 }
 
 #bottom-hero {
@@ -185,6 +206,7 @@ hero {
 
 #small-id {
     font-weight: bold;
+    font-size: 14px;
 }
 
 #navbar {
@@ -226,18 +248,38 @@ hero {
 
 .card-section {
     border: solid maroon;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0px 0 var(--darker-gray-color);
     height: 20vh;
     padding: 1vw 1vw;
     display: flex;
     flex-direction: column;
-    border-left: solid var(--gold-color) 5px;
+    border-left: solid var(--gold-color) 8px;
 }
 
 .action-btns {
     display: flex;
-    border: solid pink;
     justify-self: end;
     align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    gap: 5px;
+}
+
+.action-btns button {
+    background-color: var(--white-color);
+    color: black;
+    padding: 5px;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.action-btns img {
+    height: 4vh;
 }
 
 .card-section p {
@@ -295,6 +337,10 @@ aside {
     flex-direction: column;
     border: solid teal;
     justify-content: center;
+}
+
+.small-logo img {
+    height: 30px;
 }
 
 article h1,
