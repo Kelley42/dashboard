@@ -7,7 +7,7 @@
 :root {
     --white-color: white;
     --blue-color: rgb(40, 159, 228);
-    --gray-color: rgb(237, 241, 243);
+    --gray-color: rgb(216, 222, 224);
     --darker-gray-color: rgb(184, 188, 190); 
     --gold-color: rgb(255, 208, 0);
     --skyblue-color: rgb(205, 224, 235);
@@ -18,7 +18,6 @@
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    border: solid black;
     height: 100vh;
     margin: 0;
 }
@@ -26,7 +25,6 @@ body {
 sidebar {
     background-color: var(--blue-color);
     color: var(--white-color);
-    
     font-weight: bold;
     width: 20vw;
 }
@@ -37,7 +35,6 @@ sidebar {
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
-    border: solid black;
 }
 
 sidebar heading {
@@ -62,8 +59,8 @@ sidebar li {
 }
 
 #large-icon {
-    height: 35px;
-    width: 35px;
+    height: 3vw;
+    width: auto;
 }
 
 sidebar li img {
@@ -72,7 +69,6 @@ sidebar li img {
 }
 
 main {
-    border: solid red;
     height: 100vh;
     width: 80vw;
     display: grid;
@@ -93,7 +89,6 @@ hero,
 hero {
     display: grid;
     grid-template-rows: 7vh 11vh;
-    border: solid gray;
     padding: 0;
 }
 
@@ -124,12 +119,14 @@ hero {
     margin-left: 2vw;
     font-size: 12px;
     gap: 15px;
+    margin-top: 2vh;
 }
 
 #search {
     border-radius: 50px;
     height: 5vh;
     width: 40vw;
+    border: none;
 }
 
 #searchbar img{
@@ -175,9 +172,8 @@ hero {
     margin-right: 2vw;
     font-size: 12px;
     height: 5vh;
-    border: solid purple;
     gap: 35px;
-    margin-top: 1vh;
+    margin-top: 2vh;
 }
 
 #bottom-hero {
@@ -186,7 +182,6 @@ hero {
 }
 
 #greeting {
-    border: solid red;
     height: 10vh;
     margin-left: 2vw;
     display: flex;
@@ -194,16 +189,18 @@ hero {
     gap: 15px;
 }
 
-.large-logo {
-    width: 5vw;
+#greeting p {
+    margin-top: 10px;
 }
 
-#large-id {
-    border: solid green;
+.large-logo {
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #large-id h1 {
-    border: solid pink;
     font-size: 25px;
     margin-top: 5px;
 }
@@ -215,7 +212,7 @@ hero {
 
 #navbar {
     height: 8vh;
-    width: 30vw;
+    width: 25vw;
     justify-content: space-around;
     align-items: center;
     margin-right: 2vw;
@@ -233,7 +230,6 @@ hero {
 }
 
 #container {
-    border: solid pink;
     display: flex;
     gap: 15px;
     margin: 0 15px;
@@ -244,7 +240,6 @@ hero {
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
     grid-auto-rows: 1fr;
-    border: solid blue;
     gap: 1vw;
     height: 70vh;
     width: 55vw;
@@ -252,7 +247,7 @@ hero {
 
 .card-section {
     border-radius: 10px;
-    box-shadow: 3px 3px var(--darker-gray-color);
+    box-shadow: 4px 4px var(--darker-gray-color);
     height: 18vh;
     padding: 1vw 1vw;
     display: flex;
@@ -286,7 +281,6 @@ hero {
 }
 
 .card-section p {
-    border: solid green;
     margin: 5px 0;
     flex-grow: 1;
 }
@@ -295,53 +289,47 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: solid orange;
     height: 76vh;
     width: 20vw;
 }
 
-#announcements {
-    border: solid teal;
-}
-
-#announcement-container {
-    border: solid green;
+.aside-container {
+    padding: 1vw 1vw;
+    border-radius: 10px;
+    box-shadow: 4px 4px var(--darker-gray-color);
 }
 
 .announcement-card {
-    border: solid gray;
-    margin: 0 1vw;
+    padding: 0 0 1vw 0;
+    border-bottom: solid var(--darker-gray-color) 2px;
 }
 
-#announcements p {
-    border: solid pink;
-    margin: 0;
+#announcement-container > :last-child{
+    border: none;
+    padding: 0;
 }
 
 #trending {
-    border: solid blue;
     width: 20vw;
 }
 
 #trending-container {
-    border: solid black;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 0 0;
 }
 
 .trending-card {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: solid pink;
-    margin: 0 1vw;
     gap: 1vw;
+    padding: 5px 1vw;
 }
 
 .trending-info {
     display: flex;
     flex-direction: column;
-    border: solid teal;
     justify-content: center;
 }
 
@@ -361,17 +349,13 @@ aside p {
 
 h2 {
     font-size: 18px;
-    border: solid gray;
-
 }
 
 h3 {
-    border: solid red;
     margin: 5px 0;
     font-size: 16px;
 }
 
 h4 {
-    border: solid blue;
     font-size: 14px;
 }
